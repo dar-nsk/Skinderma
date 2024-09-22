@@ -1,0 +1,97 @@
+<html>
+   <head>
+    <title> Skin Diagnosis website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+     <img src="images/logo.png" class="logo">
+   
+
+    </head>
+    <body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Skin Derma</h1>
+            <p>A healthy skin assures a hearty smile</p>
+        <div class="banner-btn">
+            
+           <a href="http://localhost/skin_derma/signup.html"><span></span>Sign up</a>
+           
+           <a href="http://localhost/skin_derma/login.html"><span></span>Log in</a>
+            
+        </div>
+     </div>
+        
+        </section>    
+ <div id="sideNav">
+        <nav>
+     <ul>
+         <li><a href="#">HOME</a></li>
+         <li><a href="#">SERVICES</a></li> 
+         <li><a href="#">ABOUT</a></li>
+         <li><a href="#">CONTACT</a></li>
+         
+            </ul> 
+     </nav>
+        </div>
+  <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+        </div>
+        <!--Services-->
+        <section id="feature">
+        <div class="title-text">
+            <p>SERVICES</p>
+            </div>
+        <div class="service-btn">
+            <a href="#"><span></span>Book Appoitment</a>
+            <img src="images/pic1.jpg"></div>
+            <div class="service-btn">
+                <a href="http://localhost/skin_derma/search.html"><span></span>Self Diagnoser</a>
+                <img src="images/pic2.jpg">
+            
+            
+           
+            </div>  
+        </section>
+        <!--About-->
+        <section id="About">
+        <div class="info">
+           <h1>About</h1>
+        <p>Welcome to our platform dedicated to empowering individuals to self diagnose skin conditions.Our mission is to provide accessible and accurate information,enabling users to identify and understand various dermatological issues from the comfort of your home.With comprehensive resources and expert guidance,we aim to provide skin health awareness and encourgae proactive self-care.Explore our users-friendly interface and take chanrge of your skin's well being today</p>
+            </div>
+        </section>
+        <!--contact us-->
+        <section id="Contact">
+        <div class="connect">
+            <h1>Contact us</h1>
+            <input type="text" name="first" placeholder="First name" autocomplete="off" required>
+            <input type="text" name="last" placeholder="Last name" autocomplete="off" required>
+            <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+            <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
+                <button type="submit">Send Message</button>
+            
+            </div>
+        </section>
+   <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu") 
+        
+         sideNav.style.right = "-250";
+       
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                
+            }
+            else{
+                sideNav.style.right = "-250";
+            }
+        }
+       
+      
+        
+        
+        </script>
+    
+    </body>
+</html>
